@@ -31,7 +31,7 @@ const setSettings = async (req, res) =>
 
 
 
-MediaSourceHandle.exports = {
+module.exports = {
     register,
     getProfile,
     setSettings

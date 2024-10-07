@@ -20,9 +20,7 @@ const logout = async (req, res) =>
 }
 
 
-
-
-MediaSourceHandle.exports = {
+module.exports = {
     login,
     logout
 }

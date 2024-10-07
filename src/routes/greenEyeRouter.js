@@ -1,5 +1,4 @@
 const router = require('express').Router()
-router.delete('/:id', deletPolle)
 const {createPoll, getNotifications, GetPollById, reply, deletPolle} = require('../controllers/greenEyeController')
 
 router.post('/', createPoll)

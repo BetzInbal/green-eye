@@ -49,7 +49,7 @@ const deletPolle = async (req, res) =>
     }
 }
 
-moudel.exports = {
+module.exports = {
     createPoll,
     getNotifications,
     GetPollById,
