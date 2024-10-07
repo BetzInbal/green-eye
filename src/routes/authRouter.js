@@ -5,7 +5,7 @@ const router = require('express').Router()
 
 router.post('/login',authController.login)
 
-router.post('/logout', () =>{})
+router.post('/logout', authController.logout)
 
 
 module.exports = router

@@ -3,7 +3,7 @@
 const createPoll = async (req, res) =>
 {
     try {
-        
+
     } catch (error) {
         
     }
@@ -13,7 +13,7 @@ const createPoll = async (req, res) =>
 const getNotifications = async (req, res) =>
 {
     try {
-        
+
     } catch (error) {
         
     }

@@ -7,6 +7,7 @@ const login = async (req, res) =>
         res.cookie('token',token)
         res.json('welcomev' + req.body.user_name)
     } catch (error) {
+        console.log(error);      
         res.status(400).json(error)
     }
 }
@@ -14,10 +15,10 @@ const login = async (req, res) =>
 
 const logout = async (req, res) =>
 {
-    try {
-        
+    try {       
+        res.clearCookie('token').send('cookie clear')
     } catch (error) {
-        
+        res.sendstatus(500)
     }
 }
 
