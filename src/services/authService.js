@@ -11,7 +11,7 @@ const login = async (user) => {
             {throw new Error('wrong password')}
         
         const token = await jwt.sign({
-            user_name:dbUser.user_name, role:dbUser.role}
+            user_name:dbUser.user_name, role:dbUser.role, id:dbUser._id}
             ,process.env.TOP_SECRET, 
             {expiresIn:'3m'})
         return token
