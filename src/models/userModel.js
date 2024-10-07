@@ -9,7 +9,7 @@ const userScheam = new mongoose.Schema({
         required:[true,'password mast be provided']},
     role:{
         type:String,
-        enum:['solddier', 'commander'],
+        enum:['soldier', 'commander'],
         required:[true, 'pliase provide a role']},
     area:{
         type:String, 
